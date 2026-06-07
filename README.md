@@ -74,15 +74,15 @@ df["churn_risk_score"] = (recency_pts + support_pts + churn_history_pts).round(2
 
 # Save Sanatized Dataset for Snowflake Landing
 df.to_csv("transform_retail_data.csv", index=False)
-
-⚡ Phase 2: Warehouse Modeling & dbt Pipelines (Silver & Gold Layers)
+---
+##⚡ Phase 2: Warehouse Modeling & dbt Pipelines (Silver & Gold Layers)
 
 To prevent reporting breakages and relational Fan-out Duplication Problems, the architecture implements strict sequence window ranking (row_number()) inside dbt models before generating central analytics cubes.
 1. Dimension Tables (Silver Layer Example)
 
 dim_promotions.sql and dim_products.sql resolve structural anomalies inside Kaggle source formats by partitioning records over business natural keys to isolate unique entries.
 SQL
-
+---
 {{ config(materialized='table') }}
 
 with promotion_base as (
