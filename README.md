@@ -65,11 +65,6 @@ Leverages advanced programmatic variables to expose demographic retention risks 
 * **Income & Loyalty Adoption Deck:** Horizontal 100% stacked metrics tracking active loyalty program conversions across defined economic bounds.
 * **Sequential Age Cohorts Correlation:** Linearly groups customer ages into clean 5-year buckets to evaluate shopping tenure and age-based attrition rates without visual noise.
 
-### 3. Pipeline Operations & Quality Traceability Canvas
-Built specifically to provide infrastructure visibility and enterprise platform governance:
-* **Product Portfolio Distribution Treemap:** Hierarchical visualization tracking active transaction volume shares across categories and brands.
-* **Governance Audit Logging Grid:** Displays dbt pipeline runtime execution tokens and processing timestamps directly on the canvas, proving absolute data integrity to stakeholders.
-
 ---
 
 ## 💻 Operations & Deployment Flow
