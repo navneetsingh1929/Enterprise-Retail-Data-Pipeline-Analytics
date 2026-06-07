@@ -1,0 +1,6 @@
+sources:
+  - name: raw
+    database: retail_db  
+    schema: raw  
+    tables:
+      - name: landing_retail_data

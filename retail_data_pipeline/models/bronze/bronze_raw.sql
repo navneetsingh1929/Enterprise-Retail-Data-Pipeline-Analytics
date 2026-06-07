@@ -1,0 +1,1 @@
+SELECT * FROM {{ source('raw', 'landing_retail_data') }}
